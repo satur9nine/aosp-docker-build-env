@@ -33,7 +33,7 @@ Build the docker images with the following commands:
     ./build.sh
     cd ..
 
-Building the images is a one time operation. To pick up changes in this project (for example, build aliases) re-build the docker image.
+Building the images is a one time operation. To pick up changes in this project re-build the docker image.
 
 Ensure that you have the `CCACHE_DIR` host OS shell environment variable exported to a valid path somewhere on your host OS (usually your home directory). For example:
 
@@ -51,7 +51,7 @@ If you have `out` directories that already exist for your platforms before using
 Once the images have been built you can enter the appropraite docker environment:
 
 * Use ubuntu14 to build Android OS versions less than 10
-* Use ubuntu18 to build Android OS versions 10 or greater (tested up to Android 13)
+* Use ubuntu18 to build Android OS versions 10 or greater (tested up to Android 15)
 
 To initiate a platform build use the `run.sh` script and pass the directory to where you've checked out your platforms.
 
