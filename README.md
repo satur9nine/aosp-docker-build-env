@@ -2,7 +2,9 @@
 
 From these docker environments you can build the Android platform. Checking out the code, syncing it, running the IDE, pushing commits, using ADB and debugging are still performed using your host OS.
 
-This docker setup currently doesn't work on anything other than Linux. Flashing currently cannot be done from the container so until that is possible you should stick with using a Linux machine as your host OS.
+This docker setup currently doesn't work on anything other than Linux. Flashing currently cannot be done from the container so until that is possible you should stick with using Linux as your host OS.
+
+This project has not been tested on ARM host machines, only X86_64 (aka AMD64) host machines have been tested. Check https://source.android.com for host machine RAM and CPU recommendations. Note that host hard drive filesystem format containing AOSP source is highly recommended to be ext4 due to bugs in some versions of AOSP build scripts.
 
 Before you setup docker you should have the Android OS platforms you wish to work on already checked out to your machine.
 
